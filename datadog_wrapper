@@ -47,16 +47,16 @@ setEnvVars() {
         DD_DIR="/home/datadog"
     fi
 
-    if [ -z "$DD_BINARY_DIR" ]; then
-        DD_BINARY_DIR="${DD_DIR}/${DD_AAS_LINUX_VERSION}"
-    fi
-
     if [ -z "$DD_BINARIES_URL" ]; then
         DD_BINARIES_URL="https://github.com/DataDog/datadog-aas-linux/releases/download"
     fi
 
     if [ -z "$DD_AAS_LINUX_VERSION" ]; then
         DD_AAS_LINUX_VERSION="v0.1.0"
+    fi
+
+    if [ -z "$DD_BINARY_DIR" ]; then
+        DD_BINARY_DIR="${DD_DIR}/${DD_AAS_LINUX_VERSION}"
     fi
 
     if [ -z "$DD_TRACE_ENABLED" ]; then
@@ -106,12 +106,12 @@ startBinaries() {
 
     if [ "$DD_TRACE_ENABLED" = "true" ]; then
         echo "Starting the trace agent"
-        eval "$BINARY_DIR/process_manager $BINARY_DIR/trace-agent &"
+        eval "$DD_BINARY_DIR/process_manager $BINARY_DIR/trace-agent &"
     fi
 
     if [ "$DD_CUSTOM_METRICS_ENABLED" = "true" ]; then
         echo "Starting DogStatsD"
-        eval "$BINARY_DIR/process_manager $BINARY_DIR/dogstatsd start &"
+        eval "$DD_BINARY_DIR/process_manager $BINARY_DIR/dogstatsd start &"
     fi
 }
 
