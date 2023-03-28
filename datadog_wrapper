@@ -52,7 +52,7 @@ setEnvVars() {
     fi
 
     if [ -z "$DD_AAS_LINUX_VERSION" ]; then
-        DD_AAS_LINUX_VERSION="v0.1.0"
+        DD_AAS_LINUX_VERSION="v0.1.1"
     fi
 
     if [ -z "$DD_BINARY_DIR" ]; then
@@ -117,7 +117,6 @@ startBinaries() {
 
 setUpNodeEnv() {
     echo "Setting up Datadog tracing for Node"
-    getBinaries || return
     echo "Installing Node tracer"
     yarn add dd-trace || return
 
@@ -130,8 +129,6 @@ setUpNodeEnv() {
 
 setUpDotnetEnv() {
     echo "Setting up Datadog tracing for .NET"
-    getBinaries || return
-
     if [ -z "$DD_DOTNET_TRACER_VERSION" ]; then
         DD_DOTNET_TRACER_VERSION=2.19.0
     fi
@@ -154,8 +151,6 @@ setUpDotnetEnv() {
 
 setUpJavaEnv() {
     echo "Setting up Datadog tracing for Java"
-    getBinaries || return
-
     if [ -z "$DD_JAVA_TRACER_VERSION" ]; then
         DD_JAVA_TRACER_VERSION=1.4.0
     fi
@@ -177,8 +172,6 @@ setUpJavaEnv() {
 
 setupPHPEnv() {
     echo "Setting up Datadog tracing for PHP"
-    getBinaries || return
-
     if [ -z "$DD_PHP_TRACER_VERSION" ]; then
         DD_PHP_TRACER_VERSION=0.83.1
     fi
@@ -196,8 +189,6 @@ setupPHPEnv() {
 
 setUpPyEnv() {
     echo "Setting up Datadog tracing for Python"
-    getBinaries || return
-
     if [ -z "$DD_PYTHON_TRACER_VERSION" ]; then
         DD_PYTHON_TRACER_VERSION=1.7.0
     fi
