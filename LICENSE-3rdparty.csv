@@ -1,0 +1,7 @@
+Component,Origin,License,Copyright
+datadog-agent,https://github.com/DataDog/datadog-agent,Apache-2.0,"Copyright 2016-present Datadog, Inc."
+dd-trace-js,https://github.com/DataDog/dd-trace-js,Apache-2.0,"Copyright 2016-present Datadog, Inc."
+dd-trace-py,https://github.com/DataDog/dd-trace-py,Apache-2.0,"Copyright 2016-present Datadog, Inc."
+dd-trace-java,https://github.com/DataDog/dd-trace-java,Apache-2.0,"Copyright 2017-present Datadog, Inc."
+dd-trace-dotnet,https://github.com/DataDog/dd-trace-dotnet,Apache-2.0,"Copyright 2017-present Datadog, Inc."
+dd-trace-php,https://github.com/DataDog/dd-trace-php,Apache-2.0,"Copyright 2018-present Datadog, Inc."
