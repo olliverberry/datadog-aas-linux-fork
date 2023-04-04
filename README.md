@@ -8,7 +8,7 @@ _Note: Currently Java, NODE, .NET, PHP and Python are supported._
 - `DD_SERVICE` is the service name used for this program. Defaults to the name field value in package.json.
 - `DD_START_APP` is the command used to start your application. For example, `node ./bin/www`
 
-![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/YEuD88kN/57eceb6b-dd34-4d5f-a7ea-a8fcc2ec77ba.jpg?source=viewer&v=505cc168a458a4ec84b7d6a903f78493)
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/v1uPLYrR/e0f4e84d-b9bf-4f90-838c-f1771cc9d95d.jpg?v=54a84161784fcf4f1df606fbf7195a65)
 
 ### General Settings
 ##### Node, .NET, PHP or Python
