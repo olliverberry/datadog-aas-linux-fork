@@ -8,7 +8,7 @@ _Note: Currently Java, NODE, .NET, PHP and Python are supported._
 - `DD_SERVICE` is the service name used for this program. Defaults to the name field value in package.json.
 - `DD_START_APP` is the command used to start your application. For example, `node ./bin/www`
 
-![storms-nodejs-example - Microsoft Azure 2022-11-30 at 4 15 47 PM](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/YEuD88kN/57eceb6b-dd34-4d5f-a7ea-a8fcc2ec77ba.jpg?source=viewer&v=505cc168a458a4ec84b7d6a903f78493)
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/YEuD88kN/57eceb6b-dd34-4d5f-a7ea-a8fcc2ec77ba.jpg?source=viewer&v=505cc168a458a4ec84b7d6a903f78493)
 
 ### General Settings
 ##### Node, .NET, PHP or Python
@@ -16,7 +16,7 @@ Add the following to the startup command box
 
       curl -s https://raw.githubusercontent.com/DataDog/datadog-aas-linux/v1.0.0/datadog_wrapper | bash
 
-![storms-nodejs-example - Microsoft Azure 2022-11-30 at 4 15 26 PM](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/P8uNWWQ6/02c4f33f-f4d9-42b3-b746-3d5c9d62a8f3.jpg?source=viewer&v=3db9f9bba7f342e88c43da5aed1218fd)
+![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/bLulxkeq/94ba9a56-8bde-430a-b382-dbc66ec94381.jpg?v=e72580aea7e10ed258321357a892d9df)
 
 ##### Java
 Download the `datadog_wrapper` file from the releases and upload it to your application with the [Azure CLI command](https://learn.microsoft.com/en-us/azure/app-service/deploy-zip?tabs=cli#deploy-a-startup-script):
