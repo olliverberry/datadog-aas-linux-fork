@@ -14,7 +14,7 @@ _Note: Currently Java, NODE, .NET, PHP and Python are supported._
 ##### Node, .NET, PHP or Python
 Add the following to the startup command box
 
-      curl -s https://github.com/DataDog/datadog-aas-linux/releases/download/v1.0.0/datadog_wrapper | bash
+      curl -s https://raw.githubusercontent.com/DataDog/datadog-aas-linux/v1.1.0/datadog_wrapper | bash
 
 ![](https://p-qkfgo2.t2.n0.cdn.getcloudapp.com/items/8LuqpR7e/6a9bf63d-5169-49d0-a68a-20e6e3009d47.jpg?v=7704a16bc91a6a57caf8befd84204415)
 
@@ -27,7 +27,7 @@ Alternatively you can upload this script as part of your application and set the
 
 If you are already using a startup script, add the following curl command to the end of your script:
 
-     curl -s https://github.com/DataDog/datadog-aas-linux/releases/download/v1.0.0/datadog_wrapper | bash
+     curl -s https://raw.githubusercontent.com/DataDog/datadog-aas-linux/v1.1.0/datadog_wrapper | bash
 ### Viewing traces
 
 1. Azure will restart the application when new Application Settings are saved. However, a restart may be required for the startup command to be recognized by App Services if it is added and saved at a different time.
