@@ -31,6 +31,8 @@ main() {
             setupPHPEnv;;
         "PYTHON")
             setUpPyEnv;;
+        "DOCKER")
+            setUpDockerEnv;;
         "*")
             echo "Unsupported runtime. Exiting Datadog startup"
             return;;
@@ -113,6 +115,25 @@ startBinaries() {
         echo "Starting DogStatsD"
         eval "$DD_BINARY_DIR/process_manager $BINARY_DIR/dogstatsd start &"
     fi
+}
+
+setUpDockerEnv() {
+    echo "setting up Datadog tracing for Docker for language $RUNTIME"
+    case "$RUNTIME" in
+        "NODE")
+            setUpNodeEnv;;
+        "DOTNETCORE")
+            setUpDotnetEnv;;
+        "JAVA")
+            setUpJavaEnv;;
+        "PHP")
+            setupPHPEnv;;
+        "PYTHON")
+            setUpPyEnv;;
+        "*")
+            echo "Unsupported runtime. Exiting Datadog startup"
+            return;;
+    esac
 }
 
 setUpNodeEnv() {
